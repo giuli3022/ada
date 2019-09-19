@@ -2,3 +2,46 @@
     border: 1px solid black;
     padding: 25px 25px 25px 25px;
 }
+
+.div {
+    box-sizing: border-box;
+
+}
+
+.clearfix {
+    clear: both;
+}
+ 
+.display {
+    display: inline-block;
+    text-align: left;
+    width: calc(50% - 5px);
+    border: 1px dotted black;
+    background-color: rgb(61, 148, 219);
+    vertical-align: top;
+    margin-left: 1px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.display1 {
+    display: inline-block;
+    text-align: right;
+    width: calc(50% - 5px);
+    border: 1px dotted black;
+    background-color: rgb(131, 165, 192);
+    vertical-align: top;
+    margin-right: 1px;
+    box-sizing: border-box;
+    float: left;
+}
+.circulo {
+    height: 200px;
+    width: 200px;
+    font-size: 50px;
+    border: 10px solid black;
+    border-radius: 50%;
+    background-color: rgb(46, 241, 79);
+    text-align: center;
+    vertical-align: center;
+}
