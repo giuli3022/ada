@@ -21,7 +21,6 @@
     vertical-align: top;
     margin-left: 1px;
     box-sizing: border-box;
-    float: left;
 }
 
 .display1 {
@@ -33,7 +32,6 @@
     vertical-align: top;
     margin-right: 1px;
     box-sizing: border-box;
-    float: left;
 }
 .circulo {
     height: 200px;
