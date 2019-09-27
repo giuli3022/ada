@@ -1,3 +1,5 @@
+/*Esto es la vista normal. Está ordenado de mayor a menor y de arriba hacia abajo.*/
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #e5e5e5;
@@ -71,6 +73,10 @@ time {
     bottom: 0;
 }
 
+article {
+    height: 181px;
+}
+
 h2 {
     color: #333333;
     font-size: 25px;
@@ -93,10 +99,11 @@ p {
 }
 
 footer {
-    position: relative;
+    position: absolute;
     left: 0;
-    bottom: -30px;
-    opacity:0.6;
+    bottom:5px;
+    width: 350px;
+    color: gray;
 }
 
 .footer {
@@ -108,3 +115,33 @@ footer {
     padding-left: 20px;
    }
  
+
+/*Esto es el hover. Ordenado de la misma manera*/
+
+section:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+   }
+
+section:hover p {
+    display: block;
+    padding: 15px;
+    transition: height 1s ease-in;
+    }
+
+section:hover .imagen {
+    height: 222px;
+    filter:brightness(0.5);
+    transition: height 1s ease-in;
+    }
+
+section:hover footer{
+    position:absolute;
+    bottom: 5px;
+    background-color: #ffffff;
+    }
+
+section:hover article {
+    height: 281px;
+    transition: height 1s ease-in;
+}
