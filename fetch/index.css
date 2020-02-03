@@ -1,0 +1,121 @@
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #f6f6f0;
+}
+
+/*Cajita*/ 
+
+.card {
+    background-color: #ffffff;
+    height: 40%;
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px #d8d3cb;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.cajita {
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+
+/*Agregar*/
+
+.agregar {
+    width: 600px;
+}
+
+.agregar h2 {
+    font-weight: 400;
+}
+
+#todo-id-create, #todo-title-create, #todo-user-create {
+    height: 20px;
+    width: 150px;
+    padding-left: 15px;
+    margin: 15px 15px 5px 5px;
+    border: 2px solid #0b1320;
+    border-radius: 15px;
+}
+
+/*Modificar*/
+
+.modificar {
+    width: 600px;
+}
+
+.modificar h2 {
+    font-weight: 400;
+}
+
+#todo-id-update, #todo-title-update, #todo-user-update {
+    height: 20px;
+    width: 150px;
+    padding-left: 15px;
+    margin: 15px 15px 5px 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+/*Lista*/
+
+#todo-list {
+    list-style-type: none;
+    width:100%;
+    padding: 0;
+}
+
+.todo-item {
+    background-color: #ffffff;
+    height: 50px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px #d8d3cb;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Botones*/
+
+#todo-create, #todo-update {
+    background-color: #0b1320;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-family: 'Asap', sans-serif;
+    margin: 10px;
+    border: 2px solid #0b1320;
+    border-radius: 15px;
+}
+
+.todo-delete, .eliminar-boton {
+    background-color: #0b1320;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-family: 'Asap', sans-serif;
+    border: 2px solid #0b1320;
+    border-radius: 15px;
+}
+
+/*d8d3cb
+e8e4de
+c8d7d2
+#68B2A0
+hecho: #60E074 
+no hecho: #EE5151 
+

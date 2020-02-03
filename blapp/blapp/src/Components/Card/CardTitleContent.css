@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,900&display=swap');
+
+.card-title-movie {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 5px 0 0 0;
+    
+}
+
+.card-subtitle-director {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px 0 0 0;
+}

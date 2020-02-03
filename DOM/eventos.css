@@ -1,0 +1,29 @@
+#lista {
+    padding: 0;
+}
+
+.lista-li {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    border: black solid 1px;
+}
+
+p.tarea-li {
+    width: 50%;
+}
+
+input.check-li {
+    width: 20%;
+    margin-top: 20px;
+}
+
+input:focus {
+    border: #00aeff solid 2px;
+}
+
+.blur {
+    border: lightskyblue solid 1px;
+}

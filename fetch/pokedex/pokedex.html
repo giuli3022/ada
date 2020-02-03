@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex</title>
+    <link rel="icon" type="image/png" href="/images/pokebola1.png">
+    <link rel="stylesheet" href="pokedex.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="pokebola" src="./images/pokebola1.png">
+        <h1 class="title">Pokedex</h1>
+        <input type="text" id="buscador" placeholder="Pokemon/Pokedex Number">
+        <button id="button-go">Go!</button>
+        <!--       <nav>
+            <ul>
+                <li><a>Lista de pokemons</a></li>
+                <li><a>Lista por elementos</a>
+                    <ul>
+                        <li>Planta</li>
+                        <li>Agua</li>
+                        <li>Fuego</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>-->
+    </header>
+
+    <section id="pokedex">
+        <div id="screen">
+            <div id="container">
+                <div id="pokemon-img">
+                    <img class="pkm-img">
+                </div>
+                <div id="pokemon-info">
+                    <h2 class="pkm-name"></h2>
+                    <span class="pkm-weight"></span>
+                    <span class="pkm-height"></span>
+                    <span class="pkm-ability"></span>
+                    <div class="pkm-types">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="arrows-container">
+            <div class="arrows">
+                <button class="buttons" id="left-button"></button>
+                <button class="buttons" id="right-button"></button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="pokedex.js"></script>
+</body>
+
+</html>

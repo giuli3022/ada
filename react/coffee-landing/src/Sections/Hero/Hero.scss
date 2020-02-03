@@ -1,0 +1,53 @@
+
+@import "../../scss/common/variables.scss";
+
+.banner {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  animation: opacity 3s;
+}
+
+.banner-content {
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-title {
+  color: white;
+  font-family: $font-o;
+  font-size: 48px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-subtitle {
+  color: white;
+  font-family: $font-n;
+  font-size: 14px;
+  line-height: 23px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.hero-explore {
+  color: white;
+  font-family: $font-o;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-decoration: none;
+  cursor: pointer;
+}
+

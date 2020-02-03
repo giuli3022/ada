@@ -1,0 +1,36 @@
+body{
+    background-color: #DEE3E3;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.nav-bar {
+    background-color: #38c1cf;
+    font-size: 20px;
+    height: 60px;
+    width: 900px;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-list {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.nav-list li {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px 0 15px;
+    color:#F00D5C;
+    font-weight: bolder;
+}
+
+.nav-list li:hover {
+    color:#D20B51;
+    text-decoration: underline;
+}

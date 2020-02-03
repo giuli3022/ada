@@ -1,0 +1,97 @@
+<!--
+ 1. Crear un TODO list que tenga un imput para agregar nuevos TODO.
+ 2. Este imput debe tener un button para poder agregar el TODO desde
+    el input. 
+ 3. un button por cada TODO de la lista
+    para borrar el mismo.
+ 4. Un checkbox, antes del texto de cada TODO,
+    que me permita tachar el elemento de la lista
+    como resuelto. 
+ 5. Tomar el input y hacer que cambie sus bordes de color
+    y de ancho cuando hacemos foco(focus, hacemos click en
+    el recuadro) en el, y que esos mismos bordes y color
+    vuelvan al estado anterior cuando sacamos el foco (blur).
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="eventos.css">
+    <title>Eventos</title>
+</head>
+
+<body>
+
+
+    <h1>Tareas por hacer:</h1>
+    <input type="text" id="input" name="input">
+    <button type="button" class="agregar">Agregar</button>
+    <ul id="lista"></ul>
+
+
+    <script>
+
+        const crearLista = () => {
+            const lista = document.querySelector("#lista"); //creo mi elemento li que contiene un checkbox,
+            let li = document.createElement("li");          // un p con mi tarea y un botón de eliminar
+            li.className = "lista-li";
+            lista.appendChild(li);
+
+            let check = document.createElement("input");    //creo el checkbox
+            check.type = "checkbox";
+            check.className = "check-li";
+            li.appendChild(check);
+
+            let tarea = document.createElement("p");        //creo la tarea
+            let info = document.querySelector("input").value;
+            tarea.className = "tarea-li";
+            tarea.innerHTML = info;
+            li.appendChild(tarea);
+
+
+            check.addEventListener("change", () => {               //como mi check tiene que cambiar el p
+                if (check.checked) {                               //pongo el evento después de declarar el check
+                    tarea.style.textDecoration = "line-through";
+                }
+                else {
+                    tarea.style.textDecoration = "none";
+                }
+            })
+
+            let boton = document.createElement("button");       //creo el boton de eliminar
+            boton.innerHTML = "Eliminar";
+            boton.className = "boton-li";
+            boton.addEventListener("click", () => {             //declaro su evento
+                boton.parentElement.remove();
+            })
+            li.appendChild(boton);
+
+        }
+
+        boton = document.querySelector(".agregar");                 //declaro el evento del boton agregar. Lo hago
+        boton.addEventListener("click", crearLista);                //ahora porque llamo a mi función anterior
+
+        //focus y blur
+
+        let input = document.querySelector("#input");           //cambio del input
+        input.addEventListener("focus", () => {
+            input.classList.add("focus");
+        });
+        input.addEventListener("blur", () => {
+            input.classList.add("blur");
+            input.classList.remove("focus");                    
+        });                                                     
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body id="todo">
+
+
+    <section class="card">
+
+        <header>
+            <h1>Tareas</h1>
+        </header>
+
+        <div class="cajita">
+            <div class="agregar">
+                <h2>Agregar Tarea</h2>
+                <!--<span>ID:</span>
+                <input type="number" id="todo-id-create" placeholder="ID" /> -->
+                <span>Tarea:</span>
+                <input type="text" id="todo-title-create" placeholder="Tarea nueva" /><br>
+                <span>Usuario:</span>
+                <input type="number" id="todo-user-create" placeholder="Usuario" /> 
+                <span>Completado:</span>
+                <input type="checkbox" checked id="todo-completed" /> <br>
+                <button id="todo-create">Agregar</button>
+            </div>
+
+            <div class="modificar">
+                <h2>Modificar Tarea</h2>
+                <span>ID:</span>
+                <input type="number" id="todo-id-update" placeholder="ID" /> 
+                <span>Tarea:</span>
+                <input type="text" id="todo-title-update" placeholder="Tarea a modificar" /> <br>
+                <span>Usuario:</span>
+                <input type="number" id="todo-user-update" placeholder="Usuario" /> 
+                <span>Completado:</span>
+                <input type="checkbox" checked id="todo-completed-update" /> <br>
+                <button id="todo-update">Modificar</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <ul id="todo-list">
+        <!--    <li class="todo-item">
+            <span class="todo-title"></span>
+            <span class="todo-user"></span>
+            <span class="todo-completed"></span>
+            <button class="eliminar-boton"></button>
+        </li>   -->
+    </ul>
+
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>

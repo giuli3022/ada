@@ -1,0 +1,148 @@
+/*Esto es la vista normal. Está ordenado de mayor a menor y de arriba hacia abajo.*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e5e5e5;
+}
+
+section {
+    width: 350px;
+    height: 503px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    position: relative
+}
+
+.imagen {
+    background-image: url(foto.jpeg);
+    height: 322px;
+    width: 350px;
+    background-size: cover;  
+    position: relative;
+}
+
+time {
+    border: 2px solid #e74c3c;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    text-align: center;
+    background-color: #e74c3c;
+    color: #ffffff;
+    right: 10px;
+    top: 10px;
+}
+
+.fecha {
+    position: relative;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.numero {
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    margin-left: -10px;
+}
+
+.mar {
+    position: absolute;
+    bottom: 0;
+    margin-left: -15px;
+    font-size: 12px;
+}
+
+.photos {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 30px;
+    background-color: #e74c3c;
+    border: 2px solid #e74c3c;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+article {
+    height: 181px;
+}
+
+h2 {
+    color: #333333;
+    font-size: 25px;
+    font-weight: 800;
+    padding-left: 20px;
+}
+
+h3 {
+    color: #e74c3c;
+    font-size: 20px;
+    padding-left: 20px;
+
+}
+
+p {
+    color: #333333;
+    font-size: 12px;
+    line-height: 2;
+    display: none;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom:5px;
+    width: 350px;
+    height: 20px;
+    color: gray;
+}
+
+.footer {
+    font-size: 12px;
+    padding-left: 5px;
+ }
+
+.fa-clock-o, .fa-comments-o {
+    padding-left: 20px;
+   }
+ 
+
+/*Esto es el hover. Ordenado de la misma manera*/
+
+section:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+   }
+
+section:hover p {
+    display: block;
+    padding: 15px;
+    transition: height 1s ease-in;
+    }
+
+section:hover .imagen {
+    height: 222px;
+    filter:brightness(0.5);
+    transition: height 1s ease-in;
+    }
+
+section:hover footer{
+    position:absolute;
+    bottom: 5px;
+    background-color: #ffffff;
+    }
+
+section:hover article {
+    height: 281px;
+    transition: height 1s ease-in;
+}

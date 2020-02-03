@@ -1,0 +1,7 @@
+Hooks y useState
+
+Hook:  Estos te permiten usar el estado y otras características de React sin escribir una clase.
+
+useState es un hook. Es el estado de cada uno de los componentes. No cambia globalmente a todos los componentes. React no 
+nota los cambios a través de variables. Por eso, necesitamos el useState que re-renderiza la información.
+Usa getters-setters

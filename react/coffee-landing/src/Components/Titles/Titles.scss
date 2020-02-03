@@ -1,0 +1,32 @@
+@import "../../scss/common/variables.scss";
+
+.title-content {
+    width: 450px;
+    text-align: center;
+}
+
+.title {
+    font-family: $font-o;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-family: $font-n;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.black {
+    color: #212529;
+}
+
+.grey {
+    color: #767676;
+}
+
+.white {
+    color: #ffffff;
+}

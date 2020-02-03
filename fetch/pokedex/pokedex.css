@@ -1,0 +1,311 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    background-image: url("./images/background.png");
+}
+
+header {
+    background-color: black;
+    height: 50px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.pokebola {
+    height: 85px;
+    width: 85px;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+.title {
+    color: white;
+    padding-left: 15px;
+    margin: 10px;
+}
+
+#buscador {
+    height: 30px;
+    width: 250px;
+    margin: 7px;
+    padding-left: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    border-radius: 50px;
+}
+
+#button-go {
+    background-color: #ff1c1c;
+    height: 40px;
+    width:40px;
+    margin: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    border-radius: 50px;
+}
+
+#button-go:active {
+    background-color: #df1818;
+}
+
+#pokedex {
+    background-color: #df1818;
+    height: 400px;
+    width: 600px;
+    margin: 100px auto;
+    box-shadow: 0 0 5 #666;
+    border-top: 15px solid #ff1c1c;
+    border-left: 15px solid #c50f0f;
+    border-right: 15px solid #c50f0f;
+    border-bottom: 15px solid #b30d0d;
+    border-radius: 25px;
+}
+
+#screen {
+    background-color: #93a723;
+    height: 200px;
+    width: 500px;   
+    margin: 20px 40px;
+    display: flex;
+    border-top: 10px solid #b30d0d;
+    border-left: 10px solid #c50f0f;
+    border-right: 10px solid #c50f0f;
+    border-bottom: 10px solid #ff1c1c;
+    border-radius: 25px;
+}
+
+#container {
+    height: 150px;
+    width: 450px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#pokemon-info {
+    line-height: 1.5;
+}
+
+.pkm-name {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.pkm-img {
+    padding: 20px;
+}
+
+.pkm-weight, .pkm-height {
+    font-size: 14px;
+}
+
+#arrows-container {
+    display: flex;
+    margin-left: 70px;
+}
+
+.arrows {
+    background-image: url(./images/botones/arrows.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+.buttons {
+    background: transparent;
+    border: none !important;
+    height: 25px;
+    width: 30px;
+    cursor:pointer;
+}
+.buttons:focus {
+  outline: none;
+}
+.buttons:active {
+    border: transparent;
+}
+/*azul:297acc
+
+Types styles */
+.pkm-types {
+    margin-top: 10px;
+}
+
+.type-water {
+    background-color: #47bbf1;
+    border: 2px outset #358bb3;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-fire {
+    background-color: #e26445;
+    border: 2px outset #eb522c;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-normal {
+    background-color: #b1af9d;
+    border: 2px outset #949280;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-fighting {
+    background-color: #bf3228;
+    border: 2px outset #a3271f;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-flying {
+    background-color: #a792ee;
+    border: 2px outset #7c60d8;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-poison {
+    background-color: #a042a3;
+    border: 2px outset #732b75;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-ground {
+    background-color: #e2c06b;
+    border: 2px outset #c49b34;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-rock {
+    background-color: #b6a038;
+    border: 2px outset #998629;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-bug {
+    background-color: #85ca4d;
+    border: 2px outset #75af46;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-ghost {
+    background-color: #8475a0;
+    border: 2px outset #665683;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-steel {
+    background-color: #b2d4e0;
+    border: 2px outset #89aab6;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-grass {
+    background-color: #5ed15a;
+    border: 2px outset #4fb34c;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-electric {
+    background-color: #f8d02e;
+    border: 2px outset #c9a209;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-psychic {
+    background-color: #f070bf;
+    border: 2px outset #c45c9c;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-ice {
+    background-color: #9ae6e6;
+    border: 2px outset #77adad;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-dragon {
+    background-color: #6b3af8;
+    border: 2px outset #5831cf;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-dark {
+    background-color: #705847;
+    border: 2px outset #574437;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-fairy {
+    background-color: #ee9ba6;
+    border: 2px outset #d3707d;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  
+  .type-unknown {
+    background-color: #4129c5;
+    border: 2px outset #34219b;
+    border-radius: 5px;
+    color: #606060;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+  }
+  

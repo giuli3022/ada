@@ -1,0 +1,42 @@
+#productos {
+    background-color: #F3FAFB;
+    height: 450px;
+    width: 900px;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.productos-title {
+    display: flex;
+    justify-content: center;
+    border-bottom: gray;
+}
+
+.productos-title h1 {
+    height: 50px;
+}
+
+.productos-table {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.productos-table table {
+    width: 90%;
+}
+
+.productos-inputs {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.productos-inputs input {
+
+    padding-right: 20px;
+}
