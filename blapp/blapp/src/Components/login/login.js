@@ -63,4 +63,10 @@ Formulario de login
 2 const usuario y contraseña con un texto de "te logeaste correctamente"
 constraseña con validación
 
+
+
+this.state = {data:[]}
+render() { .... <ul><li><li></ul>}
+
+<ul><li x 16></li></ul>
 */

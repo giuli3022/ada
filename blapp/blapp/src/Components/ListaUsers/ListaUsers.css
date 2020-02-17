@@ -1,0 +1,14 @@
+
+#table-users {
+    width: 850px;
+    height: 500px;
+    padding: 20px;
+    margin: 50px;
+    vertical-align: inherit;
+    border: 1px solid black;
+}
+
+.cell-users {
+ border: 1px solid black;
+ padding: 10px;
+}
