@@ -81,7 +81,7 @@ class Chocolate extends Producto {
 }
 
 class Auricular extends Producto {
-    constructor(marca, precio, descuentos, wireless, tipo) {
+    constructor(marca, precio, descuento, wireless, tipo) {
         super(marca, precio);
         this.marca = marca;
         this.precio = precio;

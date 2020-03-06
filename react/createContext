@@ -1,0 +1,9 @@
+
+
+CREATE CONTEXT
+
+Crea un contexto en  el que voy a poder ejecutar un montón de variables y que permite pasarlos a su descendencia.
+ThemeContext tiene que envolver en App a todos los elementos a los que quiere afectar.
+
+
+

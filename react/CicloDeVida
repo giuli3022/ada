@@ -1,0 +1,33 @@
+Ciclo de vida
+En React, un componente tiene lo que se conoce como un ciclo de vida. Al igual que los seres vivos, que nacen,
+crecen, se desarrollan y mueren, un componente se monta (nace), se actualiza (crece), y se desmonta (muere).
+Montar se refiere a que un componente se agrega al DOM.
+
+Cada ciclo de vida de un componente tiene un método propio que le corresponde y que se ejecuta cuando el componente
+llega a esa etapa. Los métodos de ciclos de vida sólo pueden ser accedidos y utilizados en un componente de clase,
+que es otra de las ventajas que tiene sobre los componentes funcionales.
+
+Muchos de estos métodos rara vez los utilizamos, pero es importante saber que existen por si en alguna ocasión 
+necesitamos hacer uso de ellos. La lista de métodos son:
+
+
+Montado:
+
+constructor()
+componentWillMount()
+render()
+componentDidMount()
+
+
+Actualización:
+
+componentWillReceiveProps()
+shouldComponentUpdate()
+componentWillUpdate()
+render()
+componentDidUpdate()
+
+
+Desmontado:
+
+componentWillUnmount()
